@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellen Shooter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hud">
+    <div>Welle: <span id="wave">1</span></div>
+    <div>Leben: <span id="health">100</span></div>
+    <div>Geld: <span id="money">0</span> €</div>
+    <div>Waffe: <span id="weaponName">Pistole</span></div>
+  </div>
+
+  <canvas id="game" width="960" height="540"></canvas>
+
+  <div class="shop" id="shop">
+    <h2>Shop</h2>
+    <p>Verbessere deine Waffe mit deinem verdienten Geld.</p>
+    <button data-weapon="rifle">Gewehr (900€)</button>
+    <button data-weapon="shotgun">Schrotflinte (1800€)</button>
+    <button data-weapon="laser">Laser (3200€)</button>
+  </div>
+
+  <p class="hint">Steuerung: WASD bewegen, Maus zielen, Linksklick schießen.</p>
+
+  <script src="game.js"></script>
+</body>
+</html>
